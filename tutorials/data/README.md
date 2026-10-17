@@ -14,6 +14,8 @@ weights. No synthetic cells or fabricated results are included.
 | `pangi_programs.csv` | Guided feature IDs, representative populations and exact Reactome pathway identifiers |
 | `pangi_gene_rankings.csv` | Archived gene rankings for SE88 and SE1551, including known/candidate status |
 | `pangi_pathway_atlas.csv.gz` | Mean pathway activity and positive-score fractions across all 31 Pan-GI populations |
+| `openst_cells.csv.gz` | 39,167 cells: exact cell ID, curated identity, archived scPISCES/scGPT prediction and native spatial coordinates |
+| `openst_expected_metrics.json` | Whole-section accuracy and macro-F1 recomputed from the matched Open-ST predictions |
 | `provenance.json` | Source artifact identifiers, processing definitions, SHA-256 checksums and numerical consistency checks |
 
 ## Interpretation
@@ -46,6 +48,15 @@ Network edges in the gene tutorial represent program-gene associations;
 spatial-network edges represent cell-type neighborhood enrichment. Neither
 network is a gene-regulatory or causal interaction graph.
 
+Open-ST data are from one metastatic human lymph-node section (GSE251926,
+section 19). Both methods use exactly the same 39,167 query cells, with curated
+labels checked against the original AnnData file. Native spatial coordinates
+are displayed with the vertical axis inverted; no physical scale is inferred.
+The focused maps use the original CAF and CAM labels. Label-correspondence
+fractions are normalized within each curated population, including every cell
+of that population; diagonal entries are recall. These examples do not establish
+generalization across cancer types.
+
 ## Data sources
 
 - **Pan-GI:** Oliver et al., *Single-cell integration reveals metaplasia in
@@ -54,6 +65,7 @@ network is a gene-regulatory or causal interaction graph.
   organizational properties of mouse spinal cord and alterations in neuropathic
   pain* (2026), as cited in the scPISCES manuscript.
 - **Pathway identifiers:** Reactome. Marker annotations: CellMarker and PanglaoDB.
+- **Open-ST:** [GEO GSE251926](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE251926).
 
 These extracts accompany the scPISCES tutorial examples; consult the original
 dataset sources for full data access and reuse terms.

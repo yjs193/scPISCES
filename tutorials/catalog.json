@@ -1,0 +1,32 @@
+[
+  {
+    "id": "annotation",
+    "notebook": "Tutorial_Annotation_MERFISH.ipynb",
+    "title": "MERFISH cell annotation",
+    "minimum_figures": 2
+  },
+  {
+    "id": "pathways",
+    "notebook": "Tutorial_Pathway_Programs.ipynb",
+    "title": "Pan-GI pathway programs",
+    "minimum_figures": 3
+  },
+  {
+    "id": "markers",
+    "notebook": "Tutorial_Marker_Genes.ipynb",
+    "title": "Marker and candidate genes",
+    "minimum_figures": 3
+  },
+  {
+    "id": "spatial",
+    "notebook": "Tutorial_Spatial_Programs_MERFISH.ipynb",
+    "title": "MERFISH spatial programs and neighborhoods",
+    "minimum_figures": 2
+  },
+  {
+    "id": "openst",
+    "notebook": "Tutorial_Tumor_Microenvironment_OpenST.ipynb",
+    "title": "Open-ST tumor microenvironment",
+    "minimum_figures": 3
+  }
+]

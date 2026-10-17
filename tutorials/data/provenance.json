@@ -65,6 +65,23 @@
     "pangi_programs.csv": {
       "bytes": 426,
       "sha256": "890ce41fe7e572e29b2813e3ba6a28610d92bf5e5d0fc6694499f3d33c512de2"
+    },
+    "openst_cells.csv.gz": {
+      "bytes": 654603,
+      "sha256": "c12c381fd94660268e37fa4db2009760aef65922a9e636004b5a2a6a94fe8d17"
+    },
+    "openst_expected_metrics.json": {
+      "bytes": 239,
+      "sha256": "c9ce4b9b9247b3f03981e7a0f39be757a17da8c3472180b7c558e8200386897b"
     }
+  },
+  "openst": {
+    "n_cells": 39167,
+    "dataset": "GSE251926, section 19: metastatic human lymph node",
+    "predictions": "tmp/task2_openst_preliminary/matched_predictions.csv",
+    "coordinates": "teacher_benchmark/data/GSE251926/GSE251926_section19_test_scpisces_reactome_score_genes_all1736.h5ad",
+    "joining": "Exact cell-ID match; curated labels verified against obs.celltype; no subsampling.",
+    "orientation": "Native spatial coordinates with the vertical axis inverted; physical units not assumed.",
+    "note": "Archived matched-query outputs, not a new model run. This single tissue is not a pan-cancer generalization experiment."
   }
 }

@@ -1,0 +1,46 @@
+name: Tutorial checks
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tutorials/**"
+      - "scripts/run_tutorials.py"
+      - ".github/workflows/tutorials.yml"
+  pull_request:
+    paths:
+      - "tutorials/**"
+      - "scripts/run_tutorials.py"
+      - ".github/workflows/tutorials.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  notebooks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: tutorials/requirements.txt
+      - name: Install visualization dependencies
+        run: python -m pip install -r tutorials/requirements.txt
+      - name: Execute all tutorials on CPU
+        run: python scripts/run_tutorials.py --all --html
+      - name: Preserve executed notebooks and figures
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: tutorial-outputs
+          path: tutorials/outputs/
+          retention-days: 7
+          if-no-files-found: warn
