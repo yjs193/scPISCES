@@ -10,12 +10,25 @@ framework for interpretable single-cell annotation.
 scPISCES/
 |-- scpisces/                 # Installable model and data package
 |-- scripts/                  # Fine-tuning and prediction entrypoints
+|-- tutorials/                # Executed notebooks and compact example data
 |-- pyproject.toml
 `-- requirements.txt
 ```
 
-Pretraining, benchmark validation, and manuscript analysis pipelines are not
-included in this release.
+Pretraining and full benchmark pipelines are not included in this release.
+
+## Tutorials
+
+The [tutorials](tutorials/) include saved figures and outputs that can be viewed
+directly on GitHub:
+
+- [MERFISH cell annotation and spatial maps](tutorials/Tutorial_Annotation_MERFISH.ipynb)
+- [Pathway-guided programs in Pan-GI](tutorials/Tutorial_Pathway_Programs.ipynb)
+- [Marker and candidate-gene prioritization](tutorials/Tutorial_Marker_Genes.ipynb)
+- [Program ablation and prediction sensitivity](tutorials/Tutorial_Program_Ablation.ipynb)
+
+Each notebook includes compact example data and can be rerun on a CPU. See the
+[tutorial guide](tutorials/README.md) for setup.
 
 ## Installation
 

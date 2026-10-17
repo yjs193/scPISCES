@@ -1,0 +1,5 @@
+feature_id,cell_type,pathway_name,pathway_label
+88,Mature_B,REACTOME_ANTIGEN_ACTIVATES_B_CELL_RECEPTOR_BCR_LEADING_TO_GENERATION_OF_SECOND_MESSENGERS,B-cell receptor signaling
+507,Keratinocyte,REACTOME_FORMATION_OF_THE_CORNIFIED_ENVELOPE,Cornified envelope formation
+1467,Smooth_muscle,REACTOME_SMOOTH_MUSCLE_CONTRACTION,Smooth muscle contraction
+1692,B_plasma,REACTOME_UNFOLDED_PROTEIN_RESPONSE_UPR,Unfolded protein response

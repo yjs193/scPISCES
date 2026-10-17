@@ -1,0 +1,62 @@
+{
+  "description": "Compact extracts of archived scPISCES study results for executed tutorials.",
+  "merfish": {
+    "n_cells": 6602,
+    "prediction_head": "sparse",
+    "predictions": "teacher_benchmark/results/MERFISH_mouse_spinal_querybest_combined_benchmark_eval_20260621/series_17/benchmark_predictions.csv",
+    "coordinates": "paper/figure/figure9/source_data/merfish_query_model_dense_umap_coordinates.csv",
+    "note": "Predictions are the archived study output. UMAP coordinates are a visualization of cached dense representations; no newly trained weights are substituted."
+  },
+  "pangi": {
+    "n_cells": 31000,
+    "grouping": "curated cell-type annotations",
+    "representations": "sae_v4/revision_figures/Pan-GI/scpisr_best_epoch_representations.npz",
+    "marker_rankings": "sae_v4/revision_figures/Pan-GI/fig5e_pangi_selected_top_genes_markers.csv",
+    "expression": "log1p of the prepared expression matrix, as used by the archived marker analysis",
+    "marker_associations": "rectified pre-Top-K guided activation; archived association scores use standardized matrix products with epsilon stabilization",
+    "pathway_activity": "per-pathway min-max normalization over the displayed cell collection",
+    "counterfactual": "sae_v4/revision_figures/Pan-GI/figure6_hybrid_counterfactual_controls",
+    "correlation_checks": [
+      {
+        "gene": "MS4A1",
+        "computed_pearson_r": 0.7281023136228725,
+        "archived_score": 0.7281145453453064
+      },
+      {
+        "gene": "TNFRSF17",
+        "computed_pearson_r": 0.7016823663569611,
+        "archived_score": 0.701714038848877
+      }
+    ]
+  },
+  "files": {
+    "merfish_cells.csv.gz": {
+      "bytes": 173698,
+      "sha256": "fd4188664f16efa5341c6b315c111c0b816b1f620495525129a9536b417c3dc1"
+    },
+    "merfish_expected_metrics.json": {
+      "bytes": 90,
+      "sha256": "3d128c487d5e3f3e39214503597ddc8b81cadeefeb72ffd564efe388fa625471"
+    },
+    "pangi_ablation_curves.csv": {
+      "bytes": 71955,
+      "sha256": "c958edc892836172e767b974578d620ecf2905735f5aae3dc91a4a890144b6ec"
+    },
+    "pangi_ablation_probabilities.csv.gz": {
+      "bytes": 80285,
+      "sha256": "7edcf0f4fb94b6dba2ba8c4a3cdc48d58df6730f18c65ac97a19ff2e5f4f4dd0"
+    },
+    "pangi_cells.csv.gz": {
+      "bytes": 1665321,
+      "sha256": "dec78f64f5ccc801398bb8dddcf0b2583619a3e4cd10febb379256518cefed6f"
+    },
+    "pangi_gene_rankings.csv": {
+      "bytes": 5129,
+      "sha256": "39154641f0beef2c4b94ab8a601276881a942f0041a87fd2d57bf48408e02ea5"
+    },
+    "pangi_programs.csv": {
+      "bytes": 426,
+      "sha256": "890ce41fe7e572e29b2813e3ba6a28610d92bf5e5d0fc6694499f3d33c512de2"
+    }
+  }
+}
