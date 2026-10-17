@@ -25,10 +25,12 @@ directly on GitHub:
 - [MERFISH cell annotation and spatial maps](tutorials/Tutorial_Annotation_MERFISH.ipynb)
 - [Pathway-guided programs in Pan-GI](tutorials/Tutorial_Pathway_Programs.ipynb)
 - [Marker and candidate-gene prioritization](tutorials/Tutorial_Marker_Genes.ipynb)
-- [Program ablation and prediction sensitivity](tutorials/Tutorial_Program_Ablation.ipynb)
+- [MERFISH spatial programs and tissue neighborhoods](tutorials/Tutorial_Spatial_Programs_MERFISH.ipynb)
 
 Each notebook includes compact example data and can be rerun on a CPU. See the
 [tutorial guide](tutorials/README.md) for setup.
+
+![MERFISH cell identity, guided programs, pathways and genes](tutorials/preview/spatial_programs.png)
 
 ## Installation
 

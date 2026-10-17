@@ -5,6 +5,10 @@
     "prediction_head": "sparse",
     "predictions": "teacher_benchmark/results/MERFISH_mouse_spinal_querybest_combined_benchmark_eval_20260621/series_17/benchmark_predictions.csv",
     "coordinates": "paper/figure/figure9/source_data/merfish_query_model_dense_umap_coordinates.csv",
+    "program_activities": "teacher_benchmark/results/MERFISH_mouse_spinal_querybest_combined_benchmark_eval_20260621/scpisces_interpretability_20260708/merfish_series17_querybest_model_outputs.npz",
+    "expression": "log1p of query expression, matching the archived MERFISH interpretation analysis",
+    "joining": "Program activities come from the interpretation cache; annotations come from the benchmark table. Both are aligned by exact cell ID.",
+    "neighborhoods": "Recomputed in the notebook on the full 8-nearest-neighbor graph using archived benchmark labels; expected mixing uses all graph edges and whole-section label frequencies.",
     "note": "Predictions are the archived study output. UMAP coordinates are a visualization of cached dense representations; no newly trained weights are substituted."
   },
   "pangi": {
@@ -15,7 +19,7 @@
     "expression": "log1p of the prepared expression matrix, as used by the archived marker analysis",
     "marker_associations": "rectified pre-Top-K guided activation; archived association scores use standardized matrix products with epsilon stabilization",
     "pathway_activity": "per-pathway min-max normalization over the displayed cell collection",
-    "counterfactual": "sae_v4/revision_figures/Pan-GI/figure6_hybrid_counterfactual_controls",
+    "pathway_atlas": "paper/figure/supplementary_figure4/supplementary_figure4_pathway_activity_dotplot_source_data.csv",
     "correlation_checks": [
       {
         "gene": "MS4A1",
@@ -38,13 +42,13 @@
       "bytes": 90,
       "sha256": "3d128c487d5e3f3e39214503597ddc8b81cadeefeb72ffd564efe388fa625471"
     },
-    "pangi_ablation_curves.csv": {
-      "bytes": 71955,
-      "sha256": "c958edc892836172e767b974578d620ecf2905735f5aae3dc91a4a890144b6ec"
+    "merfish_program_cells.csv.gz": {
+      "bytes": 130691,
+      "sha256": "d5ff6d0ca6947b53306ed0b29bae90e9aa2bca2372a23d7fc9d3b0cdd5aaaae0"
     },
-    "pangi_ablation_probabilities.csv.gz": {
-      "bytes": 80285,
-      "sha256": "7edcf0f4fb94b6dba2ba8c4a3cdc48d58df6730f18c65ac97a19ff2e5f4f4dd0"
+    "merfish_programs.csv": {
+      "bytes": 350,
+      "sha256": "ff482566ddbac4c014fee765ed49ae312d16a59eb8bcaef95b3d21a0ea1565fb"
     },
     "pangi_cells.csv.gz": {
       "bytes": 1665321,
@@ -53,6 +57,10 @@
     "pangi_gene_rankings.csv": {
       "bytes": 5129,
       "sha256": "39154641f0beef2c4b94ab8a601276881a942f0041a87fd2d57bf48408e02ea5"
+    },
+    "pangi_pathway_atlas.csv.gz": {
+      "bytes": 50955,
+      "sha256": "5f1b45ca89b467594c4671288fc5213920f53506ea71dba71045556c0be71d0b"
     },
     "pangi_programs.csv": {
       "bytes": 426,

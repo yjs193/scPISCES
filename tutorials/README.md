@@ -7,8 +7,16 @@ includes the small data extracts needed to rerun its analysis on a CPU.
 | --- | --- |
 | [Cell annotation](Tutorial_Annotation_MERFISH.ipynb) | MERFISH predictions, model-embedding UMAPs and spatial subtype maps |
 | [Pathway programs](Tutorial_Pathway_Programs.ipynb) | Pan-GI guided programs and their aligned Reactome activities |
-| [Marker prioritization](Tutorial_Marker_Genes.ipynb) | Known markers, candidate genes and expression localization |
-| [Program ablation](Tutorial_Program_Ablation.ipynb) | Dose response and matched controls for internal program removal |
+| [Marker prioritization](Tutorial_Marker_Genes.ipynb) | Program-gene networks, expression UMAPs and marker dot plots |
+| [Spatial programs](Tutorial_Spatial_Programs_MERFISH.ipynb) | Cell identity, sparse programs, pathways and genes in tissue; spatial neighborhood networks |
+
+## Preview
+
+| MERFISH annotation | Pan-GI pathway atlas |
+| --- | --- |
+| [![MERFISH annotations](preview/annotation.png)](Tutorial_Annotation_MERFISH.ipynb) | [![Pathway activity atlas](preview/pathways.png)](Tutorial_Pathway_Programs.ipynb) |
+| **Marker and candidate genes** | **Spatial program localization** |
+| [![Marker expression](preview/markers.png)](Tutorial_Marker_Genes.ipynb) | [![Spatial programs](preview/spatial_programs.png)](Tutorial_Spatial_Programs_MERFISH.ipynb) |
 
 ## Run locally
 

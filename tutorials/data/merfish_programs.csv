@@ -1,0 +1,4 @@
+cell_type,feature_id,marker,candidate,pathway_label,pathway_name
+astrocyte-1,82,Slc7a10,Hrh1,Amino acid transport across the plasma membrane,REACTOME_AMINO_ACID_TRANSPORT_ACROSS_THE_PLASMA_MEMBRANE
+oligodendrocyte-2,419,Sema4d,Prox1,Endogenous sterols,REACTOME_ENDOGENOUS_STEROLS
+endothelial,1453,Flt1,Ramp2,VEGF signaling,REACTOME_SIGNALING_BY_VEGF
