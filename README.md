@@ -25,7 +25,6 @@ compact numerical data needed to rerun its visualizations on a CPU.
 | Spatial interpretation | [MERFISH programs](tutorials/Tutorial_Spatial_Programs_MERFISH.ipynb) | Cell identity, programs, pathways, genes and neighborhoods |
 | Tumor microenvironment | [Open-ST](tutorials/Tutorial_Tumor_Microenvironment_OpenST.ipynb) | Tissue compartments and cell-label correspondence |
 
-[![MERFISH cell identity, guided programs, pathways and genes](tutorials/preview/spatial_programs.png)](tutorials/Tutorial_Spatial_Programs_MERFISH.ipynb)
 
 ## Get started
 
