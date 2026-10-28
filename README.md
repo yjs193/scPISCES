@@ -35,22 +35,12 @@ conda create -n scpisces python=3.11 -y
 conda activate scpisces
 ```
 
-**Visualizations only** (no GPU or model download):
 
 ```bash
 python -m pip install -r tutorials/requirements.txt
-python scripts/run_tutorials.py --notebook annotation --html
-# Or: jupyter lab tutorials/
+
 ```
 
-Use `--all --html` to rerun every example. Executed copies, HTML previews and
-figure exports are saved under `tutorials/outputs/`. The original notebooks
-are not overwritten. Example-data integrity is checked before execution.
-
-**Fine-tuning and prediction:** install with `python -m pip install -e .`, then
-follow the [model quick start](docs/quickstart.md#annotate-new-cells).
-Model weights and vocabularies are not bundled with the visualization examples.
-FlashAttention is optional; PyTorch scaled dot-product attention is the fallback.
 
 ## Repository layout
 
