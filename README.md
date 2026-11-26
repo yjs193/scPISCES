@@ -2,20 +2,14 @@
 
 **Pathway-informed sparse programs for interpretable single-cell annotation.**
 
-[![Tutorial checks](https://github.com/yjs193/scPISCES/actions/workflows/tutorials.yml/badge.svg)](https://github.com/yjs193/scPISCES/actions/workflows/tutorials.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 scPISCES connects cell annotation with pathway-aligned sparse programs and
 associated genes. Explore the saved results below, or use the model package
 to fine-tune and annotate cells with your own compatible model assets.
 
-[Quick start](docs/quickstart.md) | [Tutorial gallery](tutorials/README.md) |
-[Input format](docs/input_format.md) | [FAQ](docs/faq.md)
 
-## Explore the results
-
-Every notebook includes executed figures, short English explanations and the
-compact numerical data needed to rerun its visualizations on a CPU.
+## Tutorials
 
 | Task | Notebook | Main views |
 | --- | --- | --- |
@@ -41,19 +35,6 @@ python -m pip install -r tutorials/requirements.txt
 
 ```
 
-
-## Repository layout
-
-```text
-scpisces/     Model architecture, data handling and training utilities
-scripts/      Fine-tuning, prediction and tutorial execution entrypoints
-tutorials/    Executed notebooks, compact example tables and preview gallery
-docs/         Quick start, input requirements and common questions
-```
-
-This release does not include pretraining or full benchmark pipelines. Tutorial
-data are extracts from archived study results, not a full training dataset.
-See [data provenance](tutorials/data/README.md) for definitions and source details.
 
 ## License
 
